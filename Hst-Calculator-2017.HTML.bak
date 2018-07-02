@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <title>Oct 2017</title>
+  <link rel="stylesheet" href="Oct2017.css">
+  <link rel="stylesheet" href="w3a.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="Oct2017.js"></script>
+
+  <body bgcolor="#7A8276">
+    <div id="CC" class="CCHST">
+      <div>
+        <div> <span class="MOver-1 white border-3" title="v. Oct 2017"> Business Expenses Calculator</span>
+          <p>
+            <p>
+        </div>
+        </style>
+        <form method="get"> <select id="expenses" style="width: 130px" onChange="UpdateTableRowsColor(this.options[this.selectedIndex].value)" onclick="this.style.backgroundColor=this.options[this.selectedIndex].style.backgroundColor">
+
+                        <option value="cac" style="background:#aacaca" checked>Select Expense</option>
+                        <option value="d0d" style="background:#d0d0d3">Info</option>
+                        <option value="b0b" style="background:#aabbba">Display All</option>
+                        <option value="bbb" style="background:#aabbba">General</option>
+                        <option value="ccc" style="background:#aaccca">Vehicle</option>
+                        <option value="ddd" style="background:#aaddda">Office</option>
+                        <option value="eee" style="background:#aaeeea">Vehicle Insurance</option>
+                        <option value="fff" style="background:#aafffa">Office Insurance</option>
+                        <option value="f4d" style="background:#aaf4da">Bank Fees</option>
+                    </select>
+          <P>
+      </div>
+      <form method="get"> <span class="MOver-1 white border-2" title="Enter Price">
+  <input type="text" id="price" placeholder="enter price" required="required" value=""
+              style="width: 110px;background:#f2f4ec"></span>
+        <div>
+          <form method="get"> <label for="inclusiveHST" class="CCHSTLabel">Includes HST? </label> <span>No</span> <input type="radio" name="inclusive" value="0"> <span>Yes</span> <input type="radio" name="inclusive" value="1" checked="checked"> </div>
+        <div>
+          <form method="get"> <label class="price">Price excluding HST: </label><span id="exclusiveHST"></span> <br> <label class="price">Paid:</label> <span id="inclusiveHST"></span> <input type="button" value="Reset" onclick="this.form.reset(),history.go(0);"> </div>
+        <div>
+          <table class="tg" style="background:#dfe6df" class="AA">
+            <tr style="background:#c9cbc5">
+              <th>Business Type</th>
+              <th>Usage % Allowed </th>
+              <th>Tax % Allowed</th>
+              <th>Tax Allowed</th>
+              <th>Amount Allowed</th>
+            </tr>
+            <tr id="1bbb">
+              <td>General</td>
+              <td id="1d0d"><span id="Usage"></span></td>
+              <td id="2d0d"><span id="Rate"></span></td>
+              <td><span id="HstPaid"></span></td>
+              <td><span id="Subtotal"></span></td>
+            </tr>
+            <tr id="1ccc">
+              <td>Vehicle</td>
+              <td id="3d0d"><span id="VehicleUsage"></span></td>
+              <td id="4d0d"><span id="VehicleRate"></span></td>
+              <td><span id="VehicleTax"> </span></td>
+              <td><span id="VehicleExpense"> </span></td>
+            </tr>
+            <tr id="1ddd">
+              <td>Office</td>
+              <td id="5d0d"><span id="OfficeUsage"></span></td>
+              <td id="6d0d"><span id="OfficeRate"></span></td>
+              <td><span id="OfficeTax"> </span></td>
+              <td><span id="OfficeExpense"></span></td>
+            </tr>
+            <tr id="1eee">
+              <td>Vehicle Insurance</br>
+              </td>
+              <td id="7d0d"><span id="VehicleInsurUsage"></span></td>
+              <td id="8d0d"><span id="VehicleInsurRate"></span></td>
+              <td><span id="VehicleInsuranceTax"> </span></td>
+              <td><span id="VehicleInsurance"> </span></td>
+            </tr>
+            <tr id="1fff">
+              <td>Office Insurance</br>
+              </td>
+              <td id="9d0d"><span id="OficeInsurUsage"></span></td>
+              <td id="10d0d"><span id="OficeInsurRate"></span></td>
+              <td>
+                <div><span id="OfficeInsuranceTax"> </span></div>
+              </td>
+              <td>
+                <div><span id="OfficeInsurance"> </span></div>
+              </td>
+            </tr>
+            <tr id="1f4d">
+              <td>Bank Fees</td>
+              <td id="11d0d"><span id="BankFeeUsage"></span></td>
+              <td id="12d0d"><span id="BankFeeRate"></span></td>
+              <td>
+                <div><span id="BankFeeTax"> </span></div>
+              </td>
+              <td>
+                <div><span id="BankFee"> </span></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </body>
+
+</html>

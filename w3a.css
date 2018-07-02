@@ -1,0 +1,14 @@
+.white{color:#111152!important; background-color:#ebebe0!important}
+
+.border-1  {border:3px solid #ccc!important}
+.border-2  {border:1px solid #ccc!important}
+.border-3{border:none;display:inline-block;outline:0;padding:5px 9px;vertical-align:middle;overflow:hidden;
+          text-align:center;cursor:pointer;white-space:nowrap}
+.border-4{border:none;display:inline-block;outline:0;padding:1px 2px;vertical-align:middle;overflow:hidden;
+          text-align:center;cursor:pointer;white-space:nowrap}
+
+.MOver-1:hover{box-shadow:0.6em 0em 0.9em rgba(122,0,0,0.44)}
+.MOver-2:hover{box-shadow:0 5px 8px 0 rgba(122,0,0,0.44)}
+.MOver-3:hover{box-shadow:0 5px 8px 0 rgba(122,0,0,0.44),
+               outline: 1px dotted black, filter: hue-rotate(90deg);}
+
